@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>图片放大</title>
+    <script src="../js/jquery.1.10.2.js"></script>
+</head>
+<style>
+    *{padding: 0;margin: 0;}
+</style>
+<body>
+<img class="pimg" src="01.jpg" width="100%" />
+
+</body>
+<script>
+    $(function(){
+        $("img").click(function(){
+
+            if($(this).width()==$(window).width()){
+                $("img").css("width","300%");
+
+            }else{
+                $("img").css("width","100%");
+            }
+
+        })
+    })
+</script>
+</html>
